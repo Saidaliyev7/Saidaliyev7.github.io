@@ -1,0 +1,14 @@
+{
+  "name": "kontakthome",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "reset-css": "^3.0.0",
+    "flexboxgrid": "^6.3.2",
+    "owl.carousel": "^2.3.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
