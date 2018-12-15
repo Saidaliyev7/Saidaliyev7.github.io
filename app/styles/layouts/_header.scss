@@ -63,6 +63,7 @@
         .navbar {
           >ul {
             >li {
+              cursor: pointer;
               padding: 13px 11px;
               transition: 0.3s ease;
 
@@ -94,6 +95,9 @@
           padding-left: 10px;
           background-color: #ff9f00;
           font-weight: 700;
+          border: 0;
+          border-top-right-radius: 3px;
+          border-top-left-radius: 3px;
           font-size: 16px;
           height: 32px;
           line-height: 32px;

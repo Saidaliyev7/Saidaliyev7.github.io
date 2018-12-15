@@ -38,7 +38,22 @@ $(document).ready(function(){
     $('.exit-icon').click(function(){
         $(".active-registration-overlay").fadeOut();
         $(".registration").fadeOut();
+        $(".cart-overlay").fadeOut();
+        $(".cart").fadeOut();
     })
+    $('.bag-popup').click(function(){
+        $(".cart-overlay").fadeIn();
+        $(".cart").fadeIn();
+    })
+   
+
+    // $(window).click(function(){
+    //     if(!$(this).closest('.registration')){
+    //         $(".active-registration-overlay").fadeOut();
+    //     $(".registration").fadeOut();
+    //     }
+        
+    // })
 
     //registration accardion
     $('.reg-content-accardion').click(function(){
@@ -51,5 +66,34 @@ $(document).ready(function(){
         
     })
    
+    //product-hover 
+    $('#products .product').hover(function(){
+        $(this).find(".product-hover-content").fadeToggle();
+    })
+
+    //basket-counter
+
+    $('.count-input .minus').click(function(){
+        let SiblingInput=$(this).parent().find("input");
+        let SiblingInputValue=parseInt($(this).parent().find("input").val());
+        let counter= parseFloat($(this).closest('.basket').find(".price").text()) 
+        let addCounter=parseFloat($(this).parent().siblings('.count').text())
+        if(SiblingInputValue>1){
+          let newValue=SiblingInputValue-1;
+          $(this).parent().find("input").val(newValue);
+          $(this).parent().siblings('.count').text((addCounter-counter).toFixed(2));
+          $('.result-right .number').text((addCounter-counter).toFixed(2));
+        }
+    })
+    $('.count-input .plus').click(function(){
+        let SiblingInput=$(this).parent().find("input");
+        let SiblingInputValue=parseInt($(this).parent().find("input").val());
+        let newValue=SiblingInputValue+1;
+        let counter= parseFloat($(this).closest('.basket').find(".price").text()) 
+        let addCounter=parseFloat($(this).parent().siblings('.count').text())
+        $(this).parent().find("input").val(newValue);
+        $(this).parent().siblings('.count').text((counter+addCounter).toFixed(2));
+        $('.result-right .number').text((counter+addCounter).toFixed(2))
+    })
     
 })

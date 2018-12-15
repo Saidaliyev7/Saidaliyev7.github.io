@@ -63,12 +63,10 @@
             bottom: -72px;
             left: 0px;
             height: 89px;
-            z-index: -1;
-            opacity: 0;
-            width: 100%;
-            transition: 0.3s ease;
+            z-index: 6;
+            display: none;
+            width: 100%;         
             background-color: white;
-
             .content-difference {
               margin-bottom: 21px;
 
@@ -122,8 +120,7 @@
             box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .15);
 
             .product-hover-content {
-              z-index: 3;
-              opacity: 1;
+             
               box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .15);
 
             }
