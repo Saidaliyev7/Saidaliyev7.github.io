@@ -85,6 +85,12 @@
         line-height: 35px;
 
         .phone-number {
+          >i{
+            width: 13px;
+            height: 22px;
+            color: #fff;
+            transform: translateY(2px);
+          }
           font-size: 20px;
           font-weight: bold;
         }
@@ -106,7 +112,14 @@
           margin: 0px 30px;
           transition: 0.3s ease;
           cursor: pointer;
-
+           i{
+             svg{
+              fill: white;
+              margin-top: 0px;
+              margin-right: 10px;
+              transform: translateY(3px);
+             }
+           }
           >a {
             text-decoration: none;
             color: white;
@@ -161,8 +174,22 @@
             height: 40px;
             padding-left: 156px;
             padding-right: 48px;
-            width: 100%
-
+            position: relative;
+            width: 100%;
+            &::after{
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              content: '\f002';
+              position: absolute;
+              
+              color: #d4312c;
+              height: 100%;
+              line-height: 39px;
+              text-align: center;
+              width: 48.5px;
+              right: 20px;
+              top: 20px;
+            }
         }
         
       }
@@ -183,6 +210,13 @@
                 transition: .3s ease;
                 &:hover{
                     background: #c42520;
+                }
+              }
+              .bag-popup{
+                >i{
+                  font-size: 20px;
+                  padding-right: 12px;
+                  transform: translateY(2px);
                 }
               }
           }
