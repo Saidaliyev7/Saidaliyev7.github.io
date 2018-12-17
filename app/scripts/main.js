@@ -16,7 +16,12 @@ $(document).ready(function(){
         dots:true,
         loop:true,
     })
-
+    $("#departments .slider-container").owlCarousel({
+        items:1,
+        dots:true,
+        loop:true,
+    })
+    
     //BackToTop
     $(window).scroll(function(){
       if($(this).scrollTop()>200)  {
