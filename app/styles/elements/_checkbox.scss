@@ -1,0 +1,42 @@
+.checkbox-element{
+    position: relative;
+    cursor: pointer;
+    &:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #d7dee6;
+    transition: 0.3s ease;
+    border-radius: 3px;
+    }
+    i{
+    
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: 16px;
+    transition: 0.3s ease;
+    opacity: 0;
+    width: 14px;
+    height: 10px;
+    }
+}
+
+
+.checkbox-element.active{
+    &:after{
+    color: #d4312c;
+    z-index: 4;
+    border-color:#d4312c;
+    background-color: #d4312c;
+    }
+    i{
+        color: white;
+        z-index: 5;
+        opacity: 1;
+    }
+}

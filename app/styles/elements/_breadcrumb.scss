@@ -1,0 +1,35 @@
+.breadcrumb{
+    margin-bottom: 20px;
+    .breadcrumb-element{
+        margin-right: 10px;
+        
+        >a{
+            height: 12px;
+            display: block;
+            min-width: 80px;
+            padding: .5em 12px;
+            font-size: 12px;
+            line-height: 12px;
+            text-align: center;
+            color: #909ca8;
+            border: 1px solid #d7dee6;
+            border-radius: 3px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+        &:hover{
+            >a{
+                border-color: #a2a1a1;
+                color: black;
+            }
+        }
+    }
+    
+    .breadcrumb-element.active{
+        >a{
+            border-color: #a2a1a1;
+            color: black;
+        }
+    }
+}

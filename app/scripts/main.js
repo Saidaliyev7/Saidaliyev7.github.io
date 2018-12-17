@@ -101,4 +101,14 @@ $(document).ready(function(){
         $('.result-right .number').text((counter+addCounter).toFixed(2))
     })
     
+
+    //checkbox
+    $(".checkbox-element").click(function(){
+        $(this).toggleClass("active");
+    })
+
+    //product-list-dropdowns
+    $('#product-list .filters .title').click(function(){
+        $(this).siblings(".content").slideToggle();
+    })
 })
