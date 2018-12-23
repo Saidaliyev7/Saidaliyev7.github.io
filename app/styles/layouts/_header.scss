@@ -1,11 +1,10 @@
 #header {
   .header-top {
-    height: 39px;
+    //height: 39px;
     background: #253444;
     color: white;
     font-size: 13px;
-    overflow-y: hidden;
-
+   
     .top-elements {
       .elements-city {
         padding: 13px 0px;
@@ -13,18 +12,20 @@
         border-right: 1px solid rgba(255, 255, 255, .2);
         padding-left: 17px;
         width: 19%;
-
+         
         .city {
           font-size: 12px;
           padding-top: 1px;
           color: #909ca8;
+          transform: translateY(5px);
         }
 
         .city-dropdown {
           margin-left: 15px;
           width: 105px;
           position: relative;
-
+          transform: translateY(5px);
+          z-index: 6;
           .dropdown-top {
             .name {
               font-weight: bold;
@@ -37,6 +38,7 @@
           .dropdown-bottom {
             max-height: 190px;
             overflow-y: auto;
+            z-index: 5;
             top: 14px;
             display: none;
             background-color: white;
@@ -45,12 +47,16 @@
             width: 100%;
             left: 0px;
             position: absolute;
-
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
             .dropdown-item {
               padding: 7px 0px;
               font-weight: bold;
               padding-left: 15px;
+              transition: 0.3s ease;
               cursor: pointer;
+              &:hover{
+                background: #dedcdc;
+              }
             }
           }
         }
@@ -62,11 +68,14 @@
 
         .navbar {
           >ul {
+            transform: translateY(6px);
             >li {
               cursor: pointer;
-              padding: 13px 11px;
+              padding: 15px 11px;
               transition: 0.3s ease;
-
+              border: 1px solid transparent;
+              border-top-left-radius:3px;
+              border-top-right-radius:3px;
               &:hover {
                 background-color: #616e7c;
               }
@@ -83,6 +92,7 @@
 
       .elements-info {
         line-height: 35px;
+        transform: translateY(10.5px);
 
         .phone-number {
           >i{
@@ -165,13 +175,28 @@
         }
       }
       .search-input {
-        width: 42%;
+        width: 80%;
         min-width: 200px;
         padding-top: 13px;
+        position: relative;
+        .search-selectbox{
+          z-index: 5;
+         position: absolute;
+          height: 40px;
+          width: 150px;
+          top: 15px;
+          outline: none;
+          border: none;
+          option{
+            border:none;
+            outline: none;
+          }
+        }
         >input{
             border: 1px solid #d7dee6;
             border-radius: 3px;
             height: 40px;
+            
             padding-left: 156px;
             padding-right: 48px;
             position: relative;
@@ -190,6 +215,13 @@
               right: 20px;
               top: 20px;
             }
+        }
+        >i{
+          position: absolute;
+          right: -197px;
+          font-size: 20px;
+          color: #d4312c;
+          top: 25px;
         }
         
       }

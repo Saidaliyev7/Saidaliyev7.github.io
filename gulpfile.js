@@ -5,7 +5,7 @@ const browserSync = require('browser-sync').create();
 const del = require('del');
 const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
-
+// const rigger =require('gulp-rigger');
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 

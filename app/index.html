@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="/bower_components/flexboxgrid/dist/flexboxgrid.css" />
   <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.css" />
   <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.theme.default.css" />
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
@@ -136,7 +137,21 @@
           </li>
           <li>
             <div class="search-input">
+                <select  class="search-selectbox" >
+                    <option value="0">Hər yerdə</option>
+                        <option value="497">Telefon və Aksesuarlar</option>
+                        <option value="654">Planşet və elektron kitablar</option>
+                        <option value="501">Komputer və ofis texnikası</option>
+                        <option value="522">TV və audio video texnikası</option>
+                        <option value="659">Foto texnika</option>
+                        <option value="422">Məişət texnikası</option>
+                        <option value="455">Mətbəx avadanlıqları</option>
+                        <option value="477">Gözəllik və sağlamlıq</option>
+                        <option value="538">Oyun və əyləncə</option>
+                        <option value="652">Aksesuarlar</option>
+                      </select>
               <input type="text">
+              <i class="fas fa-search"></i>
             </div>
           </li>
           <li>
@@ -354,194 +369,293 @@
       </div>
       <div class="products-list">
         <ul class="flex flex-wrap">
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+            <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
 
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li class="flex flex-between">
-                        <i class="fas fa-balance-scale"></i>
-                      <a href=""> Müqayisə et</a>
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
 
-                    </li>
-                    <li class="flex flex-between">
-                        <i class="fas fa-heart"></i>
-                      <a href="">Seçilmiş et</a>
 
-                    </li>
-                  </ul>
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li class="flex flex-between">
+                          <i class="fas fa-balance-scale"></i>
+                          <a href=""> Müqayisə et</a>
+
+                        </li>
+                        <li class="flex flex-between">
+                          <i class="fas fa-heart"></i>
+                          <a href="">Seçilmiş et</a>
+
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
+
+
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li class="flex flex-between">
+                          <i class="fas fa-balance-scale"></i>
+                          <a href=""> Müqayisə et</a>
+
+                        </li>
+                        <li class="flex flex-between">
+                          <i class="fas fa-heart"></i>
+                          <a href="">Seçilmiş et</a>
+
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
 
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
+                    <span>12 ay FAIZSIZ</span>
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li>
+                          <a href=""> Müqayisə et</a>
 
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li>
-                      <a href=""> Müqayisə et</a>
+                        </li>
+                        <li>
+                          <a href="">Seçilmiş et</a>
 
-                    </li>
-                    <li>
-                      <a href="">Seçilmiş et</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
 
-                    </li>
-                  </ul>
+                  </div>
                 </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
+
+
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li class="flex flex-between">
+                          <i class="fas fa-balance-scale"></i>
+                          <a href=""> Müqayisə et</a>
+
+                        </li>
+                        <li class="flex flex-between">
+                          <i class="fas fa-heart"></i>
+                          <a href="">Seçilmiş et</a>
+
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
 
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
 
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-                <span>12 ay FAIZSIZ</span>
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li>
-                      <a href=""> Müqayisə et</a>
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li class="flex flex-between">
+                          <i class="fas fa-balance-scale"></i>
+                          <a href=""> Müqayisə et</a>
 
-                    </li>
-                    <li>
-                      <a href="">Seçilmiş et</a>
+                        </li>
+                        <li class="flex flex-between">
+                          <i class="fas fa-heart"></i>
+                          <a href="">Seçilmiş et</a>
 
-                    </li>
-                  </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
+                    <span>12 ay FAIZSIZ</span>
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li>
+                          <a href=""> Müqayisə et</a>
+
+                        </li>
+                        <li>
+                          <a href="">Seçilmiş et</a>
+
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
-
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
-
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li>
-                      <a href=""> Müqayisə et</a>
-
-                    </li>
-                    <li>
-                      <a href="">Seçilmiş et</a>
-
-                    </li>
-                  </ul>
-                </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
-                </div>
-
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
-
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li>
-                      <a href=""> Müqayisə et</a>
-
-                    </li>
-                    <li>
-                      <a href="">Seçilmiş et</a>
-
-                    </li>
-                  </ul>
-                </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
-                </div>
-
-              </div>
-            </div>
-          </li>
+              </li>
         </ul>
       </div>
     </div>
@@ -553,192 +667,293 @@
       </div>
       <div class="products-list">
         <ul class="flex flex-wrap">
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+            <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
 
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li>
-                      <a href=""> Müqayisə et</a>
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
 
-                    </li>
-                    <li>
-                      <a href="">Seçilmiş et</a>
 
-                    </li>
-                  </ul>
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li class="flex flex-between">
+                          <i class="fas fa-balance-scale"></i>
+                          <a href=""> Müqayisə et</a>
+
+                        </li>
+                        <li class="flex flex-between">
+                          <i class="fas fa-heart"></i>
+                          <a href="">Seçilmiş et</a>
+
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
+
+
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li class="flex flex-between">
+                          <i class="fas fa-balance-scale"></i>
+                          <a href=""> Müqayisə et</a>
+
+                        </li>
+                        <li class="flex flex-between">
+                          <i class="fas fa-heart"></i>
+                          <a href="">Seçilmiş et</a>
+
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
 
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
+                    <span>12 ay FAIZSIZ</span>
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li>
+                          <a href=""> Müqayisə et</a>
 
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li>
-                      <a href=""> Müqayisə et</a>
+                        </li>
+                        <li>
+                          <a href="">Seçilmiş et</a>
 
-                    </li>
-                    <li>
-                      <a href="">Seçilmiş et</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
 
-                    </li>
-                  </ul>
+                  </div>
                 </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
+
+
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li class="flex flex-between">
+                          <i class="fas fa-balance-scale"></i>
+                          <a href=""> Müqayisə et</a>
+
+                        </li>
+                        <li class="flex flex-between">
+                          <i class="fas fa-heart"></i>
+                          <a href="">Seçilmiş et</a>
+
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
 
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
 
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-                <span>12 ay FAIZSIZ</span>
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li>
-                      <a href=""> Müqayisə et</a>
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li class="flex flex-between">
+                          <i class="fas fa-balance-scale"></i>
+                          <a href=""> Müqayisə et</a>
 
-                    </li>
-                    <li>
-                      <a href="">Seçilmiş et</a>
+                        </li>
+                        <li class="flex flex-between">
+                          <i class="fas fa-heart"></i>
+                          <a href="">Seçilmiş et</a>
 
-                    </li>
-                  </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
+                    <span>12 ay FAIZSIZ</span>
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li>
+                          <a href=""> Müqayisə et</a>
+
+                        </li>
+                        <li>
+                          <a href="">Seçilmiş et</a>
+
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
-
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
-
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li>
-                      <a href=""> Müqayisə et</a>
-
-                    </li>
-                    <li>
-                      <a href="">Seçilmiş et</a>
-
-                    </li>
-                  </ul>
-                </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
-                </div>
-
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
-
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li>
-                      <a href=""> Müqayisə et</a>
-
-                    </li>
-                    <li>
-                      <a href="">Seçilmiş et</a>
-
-                    </li>
-                  </ul>
-                </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
-                </div>
-
-              </div>
-            </div>
-          </li>
+              </li>
         </ul>
       </div>
     </div>
@@ -750,192 +965,293 @@
       </div>
       <div class="products-list">
         <ul class="flex flex-wrap">
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+            <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
 
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li>
-                      <a href=""> Müqayisə et</a>
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
 
-                    </li>
-                    <li>
-                      <a href="">Seçilmiş et</a>
 
-                    </li>
-                  </ul>
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li class="flex flex-between">
+                          <i class="fas fa-balance-scale"></i>
+                          <a href=""> Müqayisə et</a>
+
+                        </li>
+                        <li class="flex flex-between">
+                          <i class="fas fa-heart"></i>
+                          <a href="">Seçilmiş et</a>
+
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
+
+
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li class="flex flex-between">
+                          <i class="fas fa-balance-scale"></i>
+                          <a href=""> Müqayisə et</a>
+
+                        </li>
+                        <li class="flex flex-between">
+                          <i class="fas fa-heart"></i>
+                          <a href="">Seçilmiş et</a>
+
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
 
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
+                    <span>12 ay FAIZSIZ</span>
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li>
+                          <a href=""> Müqayisə et</a>
 
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li>
-                      <a href=""> Müqayisə et</a>
+                        </li>
+                        <li>
+                          <a href="">Seçilmiş et</a>
 
-                    </li>
-                    <li>
-                      <a href="">Seçilmiş et</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
 
-                    </li>
-                  </ul>
+                  </div>
                 </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
+
+
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li class="flex flex-between">
+                          <i class="fas fa-balance-scale"></i>
+                          <a href=""> Müqayisə et</a>
+
+                        </li>
+                        <li class="flex flex-between">
+                          <i class="fas fa-heart"></i>
+                          <a href="">Seçilmiş et</a>
+
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
 
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
 
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-                <span>12 ay FAIZSIZ</span>
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li>
-                      <a href=""> Müqayisə et</a>
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li class="flex flex-between">
+                          <i class="fas fa-balance-scale"></i>
+                          <a href=""> Müqayisə et</a>
 
-                    </li>
-                    <li>
-                      <a href="">Seçilmiş et</a>
+                        </li>
+                        <li class="flex flex-between">
+                          <i class="fas fa-heart"></i>
+                          <a href="">Seçilmiş et</a>
 
-                    </li>
-                  </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
+              </li>
+              <li>
+                <div class="product">
+                  <div class="product-image">
+                    <a href="">
+                      <img src="./images/00307202_1-200x200.png" alt="">
+                    </a>
+                  </div>
+                  <div class="product-name">
+                    <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
+
+                  </div>
+                  <div class="product-before-price">
+                    949.99
+                    <svg width="14px" height="14px" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="14" width="14" />
+                    </svg>
+                  </div>
+                  <div class="product-price flex flex-between">
+                    <p>899.99
+                      <svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image xlink:href="./images/2000px-Azeri_manat_symbol.svg.png" x="0" y="0" height="16" width="16" />
+                      </svg></p>
+                    <span>12 ay FAIZSIZ</span>
+                  </div>
+                  <div class="product-hover-content">
+                    <div class="content-difference">
+                      <ul class="flex">
+                        <li>
+                          <a href=""> Müqayisə et</a>
+
+                        </li>
+                        <li>
+                          <a href="">Seçilmiş et</a>
+
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content-buy">
+                      <a href=""> Sifariş et</a>
+                    </div>
+
+                  </div>
                 </div>
-
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
-
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li>
-                      <a href=""> Müqayisə et</a>
-
-                    </li>
-                    <li>
-                      <a href="">Seçilmiş et</a>
-
-                    </li>
-                  </ul>
-                </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
-                </div>
-
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="product">
-              <div class="product-image">
-                <a href="">
-                  <img src="./images/00307202_1-200x200.png" alt="">
-                </a>
-              </div>
-              <div class="product-name">
-                <a href=""> Samsung Galaxy A8 2018 DS (SM-A530) BLUE</a>
-
-              </div>
-              <div class="product-before-price">
-                949.99
-              </div>
-              <div class="product-price flex flex-between">
-                899.99
-              </div>
-              <div class="product-hover-content">
-                <div class="content-difference">
-                  <ul class="flex">
-                    <li>
-                      <a href=""> Müqayisə et</a>
-
-                    </li>
-                    <li>
-                      <a href="">Seçilmiş et</a>
-
-                    </li>
-                  </ul>
-                </div>
-                <div class="content-buy">
-                  <a href=""> Sifariş et</a>
-                </div>
-
-              </div>
-            </div>
-          </li>
+              </li>
         </ul>
       </div>
     </div>
@@ -951,31 +1267,31 @@
             <img src="./images/samsung-130x100.png" alt="">
           </li>
           <li>
-            <img src="./images/samsung-130x100.png" alt="">
+            <img src="./images/hp-130x100.png" alt="">
           </li>
           <li>
-            <img src="./images/samsung-130x100.png" alt="">
+            <img src="./images/gorenje-130x100.png" alt="">
           </li>
           <li>
-            <img src="./images/samsung-130x100.png" alt="">
+            <img src="./images/hoffmann-130x100.png" alt="">
           </li>
           <li>
-            <img src="./images/samsung-130x100.png" alt="">
+            <img src="./images/philps-130x100.png" alt="">
           </li>
           <li>
-            <img src="./images/samsung-130x100.png" alt="">
+            <img src="./images/lg-130x100.png" alt="">
           </li>
           <li>
-            <img src="./images/samsung-130x100.png" alt="">
+            <img src="./images/gala-130x100.png" alt="">
           </li>
           <li>
-            <img src="./images/samsung-130x100.png" alt="">
+            <img src="./images/adona-130x100.png" alt="">
           </li>
           <li>
-            <img src="./images/samsung-130x100.png" alt="">
+            <img src="./images/calitelli-130x100.png" alt="">
           </li>
           <li>
-            <img src="./images/samsung-130x100.png" alt="">
+            <img src="./images/sony-130x100.png" alt="">
           </li>
         </ul>
       </div>
@@ -1078,20 +1394,43 @@
                 </li>
                 <li>
                   <a href="">
-                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li>
                   <a href="">
-                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
                   </a>
                 </li>
                 <li>
                   <a href="">
-                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-youtube"></i>
                   </a>
                 </li>
               </ul>
+              <ul class="flex cards">
+                  <li>
+                    <a href="">
+                     <img src="./images/visa.svg" alt="">
+                    </a>
+  
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="./images/mastercard.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                         <img src="./images/american-express.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                        <img src="./images/paypal.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
             </div>
             <div class="payment">
               <ul>
@@ -1104,6 +1443,12 @@
             </div>
           </div>
 
+        </div>
+        <div class="col-md-12">
+          <div class="copyright flex flex-center">
+            <p>© 2018 Kontakt Home</p>
+              
+          </div>
         </div>
       </div>
 
@@ -1138,17 +1483,17 @@
           <li>
             <ul class="flex">
               <li>
-                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><img src="./images/facebook.svg" alt=""></a>
 
               </li>
               <li>
-                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><img src="./images/instagram-logo.svg" alt=""></a>
               </li>
               <li>
-                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><img src="./images/twitter.svg" alt=""></a>
               </li>
               <li>
-                <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><img src="./images/vk.svg" alt=""></a>
               </li>
             </ul>
           </li>
@@ -1162,12 +1507,15 @@
             <form action="">
               <div class="form-group flex">
                 <input type="text" placeholder="E-mail">
+                <i class="fas fa-envelope"></i>
               </div>
               <div class="form-group flex">
                 <input type="text" placeholder="*********">
+                <i class="fas fa-key"></i>
               </div>
               <div class="forgot-pass flex flex-end">
-                Şifrəni unutdun?
+                <a href="">Şifrəni unutdun?</a>
+                
               </div>
               <div class="btn-login flex ">
                 <div class="save-as checkbox-element">
@@ -1311,6 +1659,7 @@
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
+  <script src="/bower_components/slick-carousel/slick/slick.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 

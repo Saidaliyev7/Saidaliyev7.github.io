@@ -1,4 +1,4 @@
-#products {
+#products,#product-list {
   margin: 20px 0px;
 
   .products-title {
@@ -8,11 +8,14 @@
   }
 
   .products-list {
-    // border: 1px solid #d7dee6;
+    // 
     >ul {
+      background-color: white;
+      border: 1px solid #d7dee6;
       >li {
-        flex: 19%;
-
+        flex:0 0 19%;
+        flex-basis: 19%;
+        width: 19%;
         .product {
           background: white;
           position: relative;
@@ -30,6 +33,11 @@
               font-size: 14px;
               color: #616e7c;
               font-weight: bold;
+              text-decoration: none;
+              transition: 0.3s ease;
+              &:hover{
+                text-decoration: underline;
+              }
             }
 
           }
@@ -40,6 +48,9 @@
             text-decoration: line-through;
             font-weight: bold;
             margin: 15px 0px;
+            svg{
+              fill: #909ca8;
+            }
           }
 
           .product-price {
@@ -47,6 +58,9 @@
             font-size: 18px;
             font-weight: bold;
             line-height: 24px;
+            svg{
+              fill: #ef4b46;
+            }
             span{
                 background: #ef4b46;
                 padding: 0 8px;
@@ -75,7 +89,7 @@
                   border: 1px solid #edf1f5;
                   flex: 50%;
                   text-align: end;
-                  padding: 5px;
+                  padding: 10px 5px;
                   transition: 0.3s ease;
                   cursor: pointer;
                   &:hover{

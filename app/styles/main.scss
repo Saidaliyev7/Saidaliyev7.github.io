@@ -1,5 +1,6 @@
 // bower:scss
 @import 'bower_components/reset-css/_reset.scss';
+@import 'bower_components/slick-carousel/slick/slick.scss';
 // endbower
 
 //flexbox
@@ -10,13 +11,14 @@ body {
   background: #f9fbfc;
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 
 //wrappers 
 
 .wrapper {
-  width: 1280px;
+  width: 1250px;
   margin: 0px auto;
 }
 

@@ -3,7 +3,7 @@
   position: fixed;
   left: 32%;
   top: 8%;
-  z-index: 6;
+  z-index: 8;
   width: 500px;
   border: 0;
   border-radius: 5px;
@@ -77,6 +77,9 @@
             >a {
               color: blue;
               text-decoration: none;
+              >img{
+                width: 100%;
+              }
             }
           }
         }
@@ -123,7 +126,7 @@
 
         .form-group {
           margin-bottom: 10px;
-
+          position: relative;
           >input {
             padding-left: 50px;
             height: 40px;
@@ -139,12 +142,23 @@
             border-radius: 3px;
             transition: all 0.3s ease;
           }
+          >i{
+            position: absolute;
+            top: 17px;
+            left: 18px;
+            font-size: 20px;
+            color: #00000073;
+          }
         }
 
         .forgot-pass {
-          font-size: 13px;
-          font-weight: bold;
-          color: #00000073;
+          >a{
+            font-size: 13px;
+            font-weight: bold;
+            color: #00000073;
+            text-decoration: none;
+          }
+          
         }
 
         .btn-login {
@@ -203,9 +217,11 @@
 
       .form {
         .form-group {
+          position: relative;
           >input {
             padding-left: 14px;
           }
+          
         }
       }
     }
@@ -220,7 +236,7 @@
   bottom: 0;
   left: 0;
   background: rgba(40, 40, 40, .75);
-  z-index: 5;
+  z-index: 7;
   display: none;
   top: 0;
   left: 0;
@@ -235,7 +251,7 @@
   bottom: 0;
   left: 0;
   background: rgba(40, 40, 40, .75);
-  z-index: 5;
+  z-index: 7;
   display: none;
   top: 0;
   left: 0;
@@ -245,7 +261,7 @@
   position: fixed;
   left: 8%;
   top: 4%;
-  z-index: 6;
+  z-index: 8;
   width: 80vw;
   border: 0;
   border-radius: 5px;
