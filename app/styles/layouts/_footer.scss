@@ -1,19 +1,40 @@
 #footer {
-  padding-top: 50px;
+  padding-top: 65px;
   padding-bottom: 25px;
   background-color: rgb(37, 52, 68);
-
+  overflow-y:hidden;
+  .wrapper{
+  height: 265px;
+  .row{
+    height: 100%;
+  }
+  } 
+  .input-height{
+    height: 100%;
+  }
+  .footer-input-elements{
+    transform: translateX(50px);
+    height: 100%;
+    .title{
+      margin-bottom: 24px;
+    }
+  }
+  .footer-elements:last-child{
+  transform: translateX(25px)
+  }
   .title {
     color: white;
     font-weight: bold;
     font-size: 14px;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
   }
 
   .content {
+   
     >ul {
       >li {
-        padding: 7px 0px;
+        font-size: 14px;
+        line-height: 2.14;
 
         >a {
           color: #ffffffa8;
@@ -37,7 +58,9 @@
         padding-left: 14px;
         padding-right: 14px;
         padding-top: 5px;
+        padding-bottom: 5px;
         border: 0;
+        width: 182px;
         border-radius: 3px;
       }
 
@@ -50,7 +73,7 @@
         border: 0;
         background-color: #d4312c;
         color: white;
-        margin-left: 30px;
+        margin-left: 17px;
         cursor: pointer;
         transition: 0.3s ease;
 
@@ -66,6 +89,7 @@
       margin-right: 100px;
       color: #ffffffb3;
 
+      font-size: 13px;
     }
 
     .number {
@@ -105,20 +129,27 @@
   }
 
   .contact-us {
-    .title {
-      margin-top: 20px;
+    transform: translateX(30px);
+    .content{
+      margin-top: 18px;
+      margin-bottom: 30px;
     }
-
+    .title {
+     // margin-top: 20px;
+    }
+    .title.stay-with-us{
+      margin-bottom: 7px;
+    }
     .social-networks {
       >ul {
         margin-bottom: 10px;
         >li {
 
-          width: 50px;
-          height: 50px;
-          line-height: 50px;
+          width: 38px;
+          height: 38px;
+          line-height: 41px;
           text-align: center;
-          margin-right: 5px;
+          margin-right: 17px;
           border: 0;
           border-radius: 3px;
           cursor: pointer;
@@ -142,7 +173,7 @@
             text-decoration: none;
 
             >i {
-              font-size: 20px;
+              font-size: 23px;
             }
           }
         }
@@ -151,14 +182,33 @@
         li{
           &:hover{
             background: white;
+            .master-card{
+              width: 43px;
+    transform: translateY(-5px);
+            }
           }
         }
       }
 
     }
+    .cards{
+      li{
+        width: 80px !important;
+        height: 35px !important;
+        margin-right: 10px !important;
+        img{
+          width: 56px;
+          transform: translateY(-11px);
+        }
+
+      }
+    }
 
   }
   .copyright{
-    color: white;
+    color: #ffffffa8;
+    font-size: 13px;
+   // transform: translateY(-25px);
+    font-weight:400;
   }
 }
